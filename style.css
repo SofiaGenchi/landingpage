@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.178);
+}
+
+.nav {
+  background-color: white;
+  padding: 20px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0 5%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 8px;
+  text-align: center;
+  color: gray;
+}
+
+.btn:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+/* --------------- */
+.main {
+  margin: 5% 10%;
+  height: 88vh;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo foto"
+    "titulo foto";
+}
+
+.titulo {
+  grid-area: titulo;
+  float: right;
+}
+
+.titulo p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.titulo h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.foto {
+  grid-area: foto;
+}
+
+.foto img {
+  width: 400px;
+  float: right;
+  border: 1px solid black;
+}
+
+/* habilidades */
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 90vh; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.habilidades h2 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.habilidad {
+  display: flex;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.habilidad div {
+  margin: 20px;
+}
+
+ion-icon {
+    width: 80px;
+    height: 80px;
+    color: black;
+}
+
+ion-icon:hover {
+    color: rgb(54, 53, 53);
+
+}
+
+.hab1 {
+    display: flex;
+}
+
+.habilidad h4 {
+  font-size: x-large;
+}
+
+/* ------experiencia------ */
+.experiencia {
+  /* background-color: white; */
+  text-align: center;
+  padding: 5%;
+}
+
+.experiencia h2 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.experiencia button {
+  background-color: aqua;
+  border-style: none;
+  margin-top: 20px;
+  height: 35px;
+  width: 150px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.experiencia button:hover {
+  background-color: gray;
+  color: white;
+}
+
+/* grid exprs */
+.experiencias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "exp1 exp2"
+    "exp3 exp4";
+}
+
+.exp1 {
+  grid-area: exp1;
+}
+
+.exp2 {
+  grid-area: exp2;
+}
+
+.exp3 {
+  grid-area: exp3;
+}
+
+.exp4 {
+  grid-area: exp4;
+}
+
+
+
+
+
+/* footer------------- */
+footer {
+    text-align: center;
+    padding: 5% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+footer h2 {
+    font-size: 30px;
+}
+
+footer h5 {
+    font-size: 25px;
+    margin: 20px;
+    color: blueviolet;
+    font-family: sans-serif;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes div {
+    margin-right: 2%;
+}
